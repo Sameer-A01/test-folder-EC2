@@ -1,0 +1,22 @@
+connecting with github actions, for auto deploy
+
+
+1. Generate an SSH key for GitHub Actions
+
+ssh-keygen -t rsa -b 4096 -C "github-action-deploy"
+akses name and pass 
+
+
+2. log into the ssh and add this key inside this file by doing
+ nano ~/.ssh/authorized_keys
+
+
+ 3. go to github create repo secret in 
+ repository → Settings → Secrets and variables → Actions → New repository secret
+
+ Add the following:
+
+Secret Name	Value
+EC2_SSH_KEY	(Contents of your deploy_key private key file — the one without .pub)
+EC2_HOST	13.62.176.157(AWS Public IP)
+EC2_USER	ubuntu
