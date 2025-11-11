@@ -6,8 +6,9 @@ const page = () => {
       this is my app up and running!
       this is after the deployment we did on AWS!
       This is the final change lets check this time it it works!
-      and yes it has worked!
+      and yes it has worked! more
     </div>
+   
   )
 }
 
